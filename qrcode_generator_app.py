@@ -4,10 +4,13 @@ import time
 import os
 
 st.set_page_config(page_title= "Hi", page_icon="laughing")
-st.image("images/IMG_1901.jpg")
+
 
 def qrcode_generator_page():
     st.title("QR Code Generator")
+    directory_path="images"
+    os.makedirs(directory_path, exist_ok=True)
+    st.image("images/IMG_1901.jpg")
 
     qr_url = st.text_input(label="Enter your link here:")
 
@@ -18,8 +21,6 @@ def qrcode_generator_page():
     button = st.button("Click here to generate")
 
     def generate_qrcode(qr_url, dark_colour):
-        directory_path="images"
-        os.makedirs(directory_path, exist_ok=True)
         qrcode=segno.make_qr(qr_url)
         qrcode.save("images/qrcode_saved.png", scale=5)
 
