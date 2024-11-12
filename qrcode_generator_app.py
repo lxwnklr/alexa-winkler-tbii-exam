@@ -1,16 +1,16 @@
 import streamlit as st
 import segno
 import time
-import os
+#import os
 
 st.set_page_config(page_title= "Hi", page_icon="laughing")
 
 
 def qrcode_generator_page():
     st.title("QR Code Generator")
-    directory_path="images"
-    os.makedirs(directory_path, exist_ok=True)
-    st.image("images/IMG_1901.jpg")
+    #directory_path="images"
+    #os.makedirs(directory_path, exist_ok=True)
+    st.image("IMG_1901.jpg")
 
     qr_url = st.text_input(label="Enter your link here:")
 
