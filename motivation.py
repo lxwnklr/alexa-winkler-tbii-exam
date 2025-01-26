@@ -47,7 +47,7 @@ def motivation_quotes():
         # use second column so picture is centered
         with c2:
                 # display image for the page to be visually more appealing
-                st.image("motivation.png",use_column_width="always")
+                st.image("motivation.png")
                 # credit for creator (hyperlink to profile)
                 st.write("By [mediamodifier](https://pixabay.com/de/users/mediamodifier-1567646/)")
 
