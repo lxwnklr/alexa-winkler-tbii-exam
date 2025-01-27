@@ -227,7 +227,7 @@ def training():
                 st.session_state.user_name = user_name
 
                 placeholder.empty()
-                training_sessions()
+                st.session_state.credentials_check = True
 
 
     def login_page():
