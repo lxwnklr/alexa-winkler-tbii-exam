@@ -3,7 +3,7 @@ import streamlit as st
 def information():
     st.header("Information")
     st.subheader("What do you want to know more about?", divider="blue")
-    st.write("Click on the pictures to get more information about the topic!")
+    st.write("Click on the links to get more information about the topic!")
 
     # create the number of columns
     c1, c2 = st.columns(2)
